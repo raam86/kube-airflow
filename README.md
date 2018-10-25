@@ -48,13 +48,13 @@ and services for:
 * airflow-flower
 
 ## Helm Deployment (recommended)
-
+first run `helm dependency update airflow`
 Ensure your helm installation is done, you may need to have `TILLER_NAMESPACE` set as
 environment variable.
 
 Deploy to Kubernetes using:
 
-    make helm-install NAMESPACE=yournamespace HELM_VALUES=/path/to/you/values.yaml
+    make helm-install NAMESPACE=yournamespace HELM_VALUES=airflow/values.yaml
 
 ### Helm ingresses
 
